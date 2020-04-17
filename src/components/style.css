@@ -1,0 +1,55 @@
+
+.cover {
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("./utils/background.png");
+    z-index: bottom;
+}
+.coverTrap {
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("./utils/trapezoid.png");
+    
+}
+
+
+.square {
+    
+    position: relative;
+    left: 650px;
+    top: 50px;
+    border: 1px solid transparent    ;
+    padding: 40px;
+    text-align: start;
+    width: 300px;
+    height: 500px;
+    border-style:ridge;
+    margin: 10%;
+}
+.squareSig {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 1px solid transparent    ;
+    padding: 40px;
+    text-align: start;
+    width: 400px;
+    height: 500px;
+    border-style:ridge;
+    margin: 10%;
+
+}
+.content {
+    font-size: 2em;
+    /* padding-top: 20%; */
+    font-family: 'Noto Sans SC', sans-serif;
+    color: black;
+    }
