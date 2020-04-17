@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  /*
+  background-image: url(./utils/background.png);
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  opacity: 0.6;
+  */
+}
+
+.rightElems {
+  float: right;
+  position: absolutes;
+  right: 0px;
+  width: 40%;
+}
+
+.roundImage {
+  margin: 20px;
+}
