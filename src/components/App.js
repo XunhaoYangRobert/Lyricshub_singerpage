@@ -28,23 +28,21 @@ const styles = makeStyles((theme) => ({
 
 function App() {
 
-  return (<div className="App">
+  return (<div className="App cover">
     <ThemeProvider theme={theme}>
 
-      <div className="cover">
-        <Header/>
+      <Header/>
 
-        <div className="roundImage">
-          <ExampleComponent image={MyPhoto} roundedColor="#66A5CC" imageWidth="300" imageHeight="300" roundedSize="10"/>
-        </div>
-        <div className="coverTrap">
-          <TextBox className='rightElems'></TextBox>
-          <TextBoxSig className='rightElems'></TextBoxSig>
-
-        </div>
-        <div className='rightElems'><Buttons/></div>
+      <div className="roundImage">
+        <ExampleComponent image={MyPhoto} roundedColor="#66A5CC" imageWidth="300" imageHeight="300" roundedSize="10"/>
+      </div>
+      <div className="coverTrap">
+        <TextBox className='rightElems'></TextBox>
+        <TextBoxSig className='rightElems'></TextBoxSig>
 
       </div>
+      <div className='rightElems'><Buttons/></div>
+
     </ThemeProvider>
 
   </div>);
