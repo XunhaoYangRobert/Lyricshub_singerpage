@@ -6,6 +6,7 @@ import IconButton from '@material-ui/core/IconButton';
 import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import SearchIcon from '@material-ui/icons/Search';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Button from '@material-ui/core/Button';
 // import logoSrc from "../../assets/logo.svg"  Fixme: logo src needed HERE
@@ -64,7 +65,11 @@ export default function PrimarySearchAppBar() {
   return (<div className={classes.grow}>
     <AppBar position="fixed">
       <Toolbar>
-        <img alt="Logo" className={classes.logo}/>
+        <IconButton color="inherit">
+
+          <ArrowBackIcon fontSize="large"/>
+
+        </IconButton>
         <div className={classes.search}>
           <InputBase placeholder="Search…" classes={{
               root: classes.inputRoot,
@@ -79,9 +84,8 @@ export default function PrimarySearchAppBar() {
           </IconButton>
         </div>
         <div className={classes.grow}/>
-        <Button color="inherit" textTransform="none">
-          About Us
-        </Button>
+        <img alt="Logo" className={classes.logo}/>
+
       </Toolbar>
     </AppBar>
     <div className={classes.toolbarMargin}/>

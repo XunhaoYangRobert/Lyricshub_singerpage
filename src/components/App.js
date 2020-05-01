@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {ThemeProvider} from '@material-ui/styles';
 import {makeStyles} from '@material-ui/core/styles';
 import theme from './ui/Theme';
+import background from './ui/background'
 import Header from '../components/ui/Header'
 import Buttons from '../components/ui/Buttons'
 import TextBox from '../components/ui/TextBox';
@@ -11,7 +12,8 @@ import MyPhoto from "./utils/Taylor_Swift.png";
 
 import './App.css';
 
-const styles = makeStyles((theme) => ({
+const backgroundImg = require('./utils/background.png');
+const useStyles = makeStyles((theme) => ({
   photo: {
     width: '50%',
 
@@ -23,18 +25,24 @@ const styles = makeStyles((theme) => ({
     position: 'absolute',
     right: '10',
     width: '40%'
+  },
+  backgroundCover: {
+    backgroundImage: `url(${backgroundImg})`,
+    backgroundSize: 'cover'
   }
 }));
 
 function App() {
+  const classes = useStyles();
 
-  return (<div className="App cover">
+  return (<div className="cover">
+
     <ThemeProvider theme={theme}>
 
       <Header/>
 
       <div className="roundImage">
-        <ExampleComponent image={MyPhoto} roundedColor="#66A5CC" imageWidth="300" imageHeight="300" roundedSize="10"/>
+        <ExampleComponent image={MyPhoto} roundedColor="#66A5CC" imageWidth="300" imageHeight="300" roundedSize="0"/>
       </div>
       <div className="coverTrap">
         <TextBox className='rightElems'></TextBox>
